@@ -1,0 +1,22 @@
+body{
+    margin:0;padding:0;
+    #forShow{
+        width:30vw;
+        height:20vw;
+        margin:0 35vw;
+    }
+    h1{
+        margin:5vw;
+    }
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            img{
+                width:9vw;height:6vw;
+            }
+        }
+        float:left;
+        margin-left:1vw;
+    }
+}

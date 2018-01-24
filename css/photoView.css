@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0; }
+  body #forShow {
+    width: 30vw;
+    height: 20vw;
+    margin: 0 35vw; }
+  body h1 {
+    margin: 5vw; }
+  body li {
+    list-style: none;
+    float: left;
+    margin-left: 1vw; }
+    body li a {
+      text-decoration: none; }
+      body li a img {
+        width: 9vw;
+        height: 6vw; }
+
+/*# sourceMappingURL=photoView.css.map */
