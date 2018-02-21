@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一些链接</title>
+		
+	</head>
+	<body>
+		<div id = "change">变化的内容</div>
+		<button type = "button" onclick = "loadXMLDOC()">点击我</button>
+		<script>
+			function loadXMLDOC(){
+				var xmlhttp;
+				xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function(){
+					if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+						document.getElementById("change").innerHTML = xmlhttp.responseText;
+					}
+				}
+				xmlhttp.open("GET","forAjax.txt",true);
+				xmlhttp.send();
+			}
+//			function myclick(){
+//				var thisDiv = document.getElementById("change");
+//				thisDiv.onclick = loadXMLDOC();
+//			}
+//			window.onload = myclick;
+		</script>
+	</body>
+</html>
